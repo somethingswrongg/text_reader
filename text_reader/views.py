@@ -4,16 +4,12 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Давай уже ебашь пет, лентяй!')
+    return HttpResponse('<h2>Тут что-то будет</h2>')
 
 
-def about(request, name, age):
-    return HttpResponse(f"""
-            <h2>О пользователе</h2>
-            <p>Имя: {name}</p>
-            <p>Возраст: {age}</p>
-    """)
+def about(request):
+    return HttpResponse('<h2>Тут тоже что-то будет</h2>')
 
 
 def contacts(request):
-    return HttpResponse("<h2>Контакты</h2>")
+    return HttpResponse("<h2>И тут тоже</h2>")
