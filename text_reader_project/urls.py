@@ -20,6 +20,7 @@ from text_reader import views
 
 urlpatterns = [
     path('', views.index),
+
     path('about', views.about),
     path('contacts', views.contacts),
 ]
