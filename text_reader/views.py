@@ -1,16 +1,13 @@
-# text_reader/views.pye
-
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-
-    return HttpResponse('<h2>Тут что-то будет</h2>')
+    return render(request, 'index.html')
 
 
 def about(request):
-    return HttpResponse('<h2>Тут тоже что-то будет</h2>')
+    return render(request, "about.html")
 
 
-def contacts(request):
-    return HttpResponse("<h2>И тут тоже </h2>")
+def contact(request):
+    return render(request, "contact.html")
